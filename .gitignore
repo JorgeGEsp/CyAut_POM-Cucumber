@@ -1,0 +1,5 @@
+node_modules/
+cypress/e2e/features/testing.feature
+
+cypress/reports
+cypress/screenshots

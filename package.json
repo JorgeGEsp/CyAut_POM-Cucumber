@@ -1,0 +1,34 @@
+{
+  "name": "cypress_bootcamp_cucumber_pom_marzo2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:login": "cypress run --env tags=@login --spec '**/*.feature'",
+    "cy:regression": "cypress run --env tags=@regression --spec '**/*.feature'",
+    "cy:main": "cypress run --env tags=@main --spec '**/*.feature'",
+    "cy:checkoutProcess": "cypress run --env tags=@checkoutProcess --spec '**/*.feature'",
+    "cy:smoke": "cypress run --env tags=@smoke --spec '**/*.feature'",
+    "cy:basic-tests": "cypress run --spec 'cypress/e2e/basic-tests/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "axe-core": "^4.10.3",
+    "cypress": "^14.2.1",
+    "cypress-axe": "^1.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-on-fix": "^1.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step-definitions/*.js"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
+  }
+}
