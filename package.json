@@ -10,7 +10,11 @@
     "cy:main": "cypress run --env tags=@main --spec '**/*.feature'",
     "cy:checkoutProcess": "cypress run --env tags=@checkoutProcess --spec '**/*.feature'",
     "cy:smoke": "cypress run --env tags=@smoke --spec '**/*.feature'",
+    "cy:accesibility": "cypress run --env tags=@accesibility --spec '**/*.feature'",
+    
     "cy:basic-tests": "cypress run --spec 'cypress/e2e/basic-tests/*.js'"
+  
+  
   },
   "keywords": [],
   "author": "",
