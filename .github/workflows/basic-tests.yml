@@ -1,6 +1,8 @@
 name: Cypress Basic tests Tests
 
 on:
+  schedule:
+    - cron: '36 19 * * *'
   workflow_dispatch:
 
 jobs:
