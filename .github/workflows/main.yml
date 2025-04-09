@@ -1,0 +1,23 @@
+name: Cypress Main Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cypress-main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Cypress main tests
+      run: npm run cy:main
+        
+      env:
+        CI: true
